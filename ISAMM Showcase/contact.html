@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/ffa1677e32.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>ISAMM-Contact</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <a href="main.html"><img src="images/logo.png" alt=""></a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>               
+            </ul>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div id="lamjed">
+        <a href="#"><img src="images/lamjed.webp"></a>
+    </div>
+
+    <!--Home-->
+    <section id="home">
+        <h2>Contact Us</h2>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+        <div class="getin">
+            <h2>Get in touch</h2>
+            <p>Contact us!</p>
+
+            <div class="getin-details">
+                <h3>Location</h3>
+                <div>
+                    <i class="fa fa-map-pin get" aria-hidden="true"></i>
+                    <p>ISAMM, Campus Universitaire de la Manouba, 2010</p>
+                </div>
+                <h3>Phone</h3>
+                <div>
+                    <i class="fa fa-phone get" aria-hidden="true"></i>
+                    <p>+216 71 603 498</p>
+                </div>
+                <h3>Support </h3>
+                <div>
+                    <i class="fa fa-envelope-open-text get" aria-hidden="true"></i>
+                    <p>direction@isamm.uma.tn</p>
+                </div>
+                <h3>Follow us</h3>
+                <div class="resp-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <a href="mailto:moaminejbeli@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h4>Got any questions?</h4>
+            <p>Don't hesitate to write all of them down below</p>
+            <div class="form-row">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+            </div>
+            <div class="form-col">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-col">
+                <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+            </div>
+            <div class="form-col">
+                <button>Send message</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12776.362288119328!2d10.0609607!3d36.8163495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xde66d0d8c4b29aa6!2sISAMM%20Higher%20Institute%20of%20Arts%20and%20Multimedia%20Manouba!5e0!3m2!1sen!2stn!4v1670338091860!5m2!1sen!2stn" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-col">
+            <h3>Formations</h3>
+            <li>Licences</li>
+            <li>Cycle Ingenieur</li>
+            <li>Masters</li>
+        </div>
+        <div class="footer-col">
+            <h3>Stages</h3>
+            <li>PFE IM/CM</li>
+            <li>PFE ING</li>
+            <li>PFE MPro</li>
+        </div>
+        <div class="footer-col">
+            <h3>Administration</h3>
+            <li>Emplois du temps</li>
+            <li>Calendrier universitaire</li>
+            <li>Documents d'inscription</li>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 All rights reserved | Made by Mohamed Amine Jbeli</p>
+            <div class="resp-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <a href="mailto:moaminejbeli@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+        </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+    
+
+</body>
+</html>

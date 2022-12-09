@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/ffa1677e32.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>ISAMM-Acceuil</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <a href="main.html"><img src="images/logo.png" alt=""></a>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a class="active" href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>               
+            </ul>
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div id="lamjed">
+        <a href="#"><img src="images/lamjed.webp"></a>
+    </div>
+    <!--Home-->
+    <section id="home">
+        <h2>I.S.A.M.M</h2>
+        <p>Institut Supérieur des Arts Multimédia de la Manouba</p>
+        <div class="btn">
+            <a class="learnmore" href="about.html">Learn more</a>
+            <a class="checkprog" href="programs.html">Check Programs</a>
+        </div>
+        <p id="credits"><a href="https://www.behance.net/gallery/98311671/New-ISAMM-university">© Mohamed Fsili</a></p>
+    </section>
+
+
+    
+    <!--Footer-->
+    <footer>
+        <div class="footer-col">
+            <h3>Formations</h3>
+            <li>Licences</li>
+            <li>Cycle Ingenieur</li>
+            <li>Masters</li>
+        </div>
+        <div class="footer-col">
+            <h3>Stages</h3>
+            <li>PFE IM/CM</li>
+            <li>PFE ING</li>
+            <li>PFE MPro</li>
+        </div>
+        <div class="footer-col">
+            <h3>Administration</h3>
+            <li>Emplois du temps</li>
+            <li>Calendrier universitaire</li>
+            <li>Documents d'inscription</li>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 All rights reserved | Made by Mohamed Amine Jbeli</p>
+            <div class="resp-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <a href="mailto:moaminejbeli@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+    
+
+</body>
+</html>
